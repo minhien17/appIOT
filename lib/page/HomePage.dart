@@ -1,5 +1,6 @@
 import 'package:fire/page/Control.dart';
 import 'package:fire/page/Home.dart';
+import 'package:fire/page/Manage.dart';
 import 'package:fire/page/User.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -9,6 +10,7 @@ class HomePage extends StatefulWidget {
   static final List<Widget> _pages = <Widget>[
     Home(),
     Control(),
+    Manage(),
     User(),
   ];
 
@@ -44,6 +46,7 @@ class _HomePageState extends State<HomePage> {
                 Icons.settings_applications_outlined,
               ),
               label: "Control"),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'manage'),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,

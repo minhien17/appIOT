@@ -11,6 +11,25 @@ class User extends StatelessWidget {
       backgroundColor: Color.fromARGB(255, 222, 237, 240),
       body: Column(
         children: [
+          Row(
+            children: [
+              Spacer(),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  'Logout',
+                  style: TextStyle(color: Colors.white),
+                ),
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.blue),
+                ),
+              ),
+              SizedBox(
+                width: 10,
+              ),
+            ],
+          ),
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
